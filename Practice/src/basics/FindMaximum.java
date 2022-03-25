@@ -1,7 +1,5 @@
 package basics;
 
-import java.util.Arrays;
-
 public class FindMaximum {
 
 //Find Maximum
