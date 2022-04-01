@@ -6,9 +6,7 @@ public class TwinStrings {
      * If 2 Words are Twins
      */
     public static boolean isTwins(String a, String b){
-        if (a.length() == 0 || b.length() == 0 || b.length() != a.length()){
-            return false;
-        }
+        if ((a.length() == 0) || (b.length() == 0) || (a.length() != b.length())) return false;
         String a2 = a.toUpperCase();
         String b2 = b.toUpperCase();
         for (int i = 0; i < a.length(); i++) {
