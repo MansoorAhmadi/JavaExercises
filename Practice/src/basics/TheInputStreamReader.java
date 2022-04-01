@@ -11,23 +11,27 @@ public class TheInputStreamReader {
      * it is unnecessary. We need to do this in the case of InputStream as it does byte based reading.
      */
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         // Creates an array of character
         char[] array = new char[32];
 
-        // Creates a FileInputStream
-        FileInputStream file = new FileInputStream("/Users/mansoorahmadi/Documents/IntelliJ_PROJECTS/JavaExercises/Practice/src/basics/InputStreamReader.txt");
+        try {
+            // Creates a FileInputStream
+            FileInputStream file = new FileInputStream("/Users/mansoorahmadi/Documents/IntelliJ_PROJECTS/JavaExercises/Practice/src/basics/InputStreamReader.txt");
 
-        // Creates an InputStreamReader
-        InputStreamReader input = new InputStreamReader(file);
+            // Creates an InputStreamReader
+            InputStreamReader input = new InputStreamReader(file);
 
-        // Reads characters from the file
-        input.read(array);
-        System.out.println(array);
+            // Reads characters from the file
+            input.read(array);
+            System.out.println(array);
 
-        // Closes the reader
-        input.close();
+            // Closes the reader
+            input.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
