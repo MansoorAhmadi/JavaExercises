@@ -1,5 +1,8 @@
 package basics;
 import java.lang.StringBuffer;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class ReverseString {
 
@@ -17,7 +20,9 @@ public class ReverseString {
     }
 
     public static void main(String[] args) {
-        String text = "java interview";
-        System.out.println(reverseString(text));
+        System.out.println(reverseString("java interview"));
     }
+
+
+
 }

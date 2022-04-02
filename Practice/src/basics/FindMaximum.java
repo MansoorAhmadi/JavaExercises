@@ -11,7 +11,7 @@ public class FindMaximum {
         for (int i=0; i<list.length; i++){
             if (list[i] > result) {
                 result = list[i];
-            };
+            }
         }
         return result;
     }
