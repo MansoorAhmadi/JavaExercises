@@ -6,10 +6,11 @@ public class ReverseStringConcatenate {
 
     public static String reverse(String[] array) {
         StringBuilder sb = new StringBuilder();
+        String reversed = "";
         sb.append(array);
         sb.reverse();
 //        for (int i = array.length - 1; i >= 0; i--) {
-//            sb.reverse().append(array[i]);
+//            reversed = String.valueOf(sb.reverse().append(array[i]));
 //        }
         return sb.append(sb).toString();
     }
