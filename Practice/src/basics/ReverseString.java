@@ -20,6 +20,7 @@ public class ReverseString {
     }
 
     public static void main(String[] args) {
+//        String test = {"abc","def","gfi"};
         System.out.println(reverseString("java interview"));
     }
 
