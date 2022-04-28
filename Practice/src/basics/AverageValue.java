@@ -2,6 +2,7 @@ package basics;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class AverageValue {
 
@@ -24,4 +25,5 @@ public class AverageValue {
         list.add(20);
         System.out.println(average(list));
     }
+
 }

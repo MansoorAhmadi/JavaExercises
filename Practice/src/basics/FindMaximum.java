@@ -1,5 +1,8 @@
 package basics;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 public class FindMaximum {
 
 //Find Maximum
@@ -7,13 +10,22 @@ public class FindMaximum {
 //You can assume that the list has at least one element.
 
     public static Integer maximum(Integer[] list){
-        int result = 1;
-        for (int i=0; i<list.length; i++){
-            if (list[i] > result) {
-                result = list[i];
+//        int result = 1;
+//        for (int i=0; i<list.length; i++){
+//            if (list[i] > result) {
+//                result = list[i];
+//            }
+//        }
+//        return result;
+
+        //OR
+        int maximum = list[0];
+        for (int i : list) {
+            if (i > maximum) {
+                maximum = i;
             }
         }
-        return result;
+        return maximum;
     }
 
     public static void main(String[] args) {
