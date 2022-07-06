@@ -1,4 +1,4 @@
-package gael.gson;
+package gson;
 
 public class GoogleSon {
 

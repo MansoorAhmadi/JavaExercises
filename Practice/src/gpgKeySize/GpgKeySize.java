@@ -9,7 +9,7 @@ public class GpgKeySize {
     public static void main(String[] args) {
 
 
-        File file = new File("Users/mansoorahmadi/Desktop/GAEL_Systems/key/ma.txt");
+        File file = new File("Users/mansoorahmadi/Desktop/key/ma.txt");
         if (file.exists()) {
             double bytes = file.length();
             double kilobytes = (bytes / 1024);
